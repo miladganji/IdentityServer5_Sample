@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/hCMOxo7+b3cti7tCpl9HhvZbznj1sQ47dpUuc0Eo/KC1khb8/zc6RqZeW40o/0fB5fMRPIJ0GuCoyM/tLjXJA==",
+  "success": true,
+  "projectFilePath": "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Server\\IdentityServerAdminPanle.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ganjinejad.m\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.server\\3.2.1\\microsoft.aspnetcore.components.webassembly.server.3.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

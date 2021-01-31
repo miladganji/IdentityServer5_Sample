@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -24,9 +25,9 @@ namespace MvcClient.Controllers
 			return View();
 		}
 
-		public IActionResult Logout()
+		public async Task<IActionResult> Logout()
 		{
-
+			await HttpContext.SignOutAsync();
 			return SignOut("Cookies", "oidc");
 
 		}

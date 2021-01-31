@@ -1,4 +1,5 @@
-﻿// Copyright (c) Duende Software. All rights reserved.
+﻿
+// Copyright (c) Duende Software. All rights reserved.
 // See LICENSE in the project root for license information.
 
 using blankOfDotNet.IdentitySrv;
@@ -84,7 +85,9 @@ namespace IdentityServer
 			{
 				// https://docs.duendesoftware.com/identityserver/v5/fundamentals/resources/
 				options.EmitStaticAudienceClaim = true;
-			}).AddTestUsers(config.GetUsers())
+			}).AddProfileService<MyProfileService>()
+
+				.AddTestUsers(config.GetUsers())
 				.AddConfigurationStore(option =>
 				{
 					option.ConfigureDbContext = b => b.UseSqlServer(connectionString,

@@ -1,0 +1,286 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/3.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
+        }
+      },
+      "IdentityServerAdminPanle.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/IdentityServerAdminPanle.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IdentityServerAdminPanle.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/3.2.1": {
+      "sha512": "4fS+nZjSEg2Lb5DCNNSkagJfhCLsukyCtYUXWRcvX4mXmzecqfcmrjjevWgnKQ3VHEMLYPPPvw84GEHNFReN3A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.server/3.2.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
+        "microsoft.aspnetcore.components.webassembly.server.3.2.1.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.nuspec",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Core.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Core.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authentication.Core.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authorization.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authorization.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Authorization.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.deps.json",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.exe",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.runtimeconfig.dev.json",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Components.WebAssembly.DebugProxy.runtimeconfig.json",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Connections.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Diagnostics.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HostFiltering.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HostFiltering.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HostFiltering.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Server.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Hosting.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Extensions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Extensions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Extensions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Features.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Features.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.Features.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Http.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HttpOverrides.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HttpOverrides.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.HttpOverrides.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Metadata.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Metadata.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Metadata.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.Abstractions.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Routing.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IIS.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IIS.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IIS.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IISIntegration.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.IISIntegration.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Core.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Core.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.Server.Kestrel.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebSockets.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebSockets.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebSockets.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebUtilities.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebUtilities.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.WebUtilities.xml",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.dll",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.pdb",
+        "tools/BlazorDebugProxy/Microsoft.AspNetCore.xml",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.Binder.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.Json.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Configuration.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.DependencyInjection.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.FileProviders.Composite.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.FileProviders.Physical.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Hosting.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.Abstractions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.Configuration.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.Console.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.Debug.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.EventLog.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.EventSource.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Logging.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.ObjectPool.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Options.dll",
+        "tools/BlazorDebugProxy/Microsoft.Extensions.Primitives.dll",
+        "tools/BlazorDebugProxy/Microsoft.Net.Http.Headers.dll",
+        "tools/BlazorDebugProxy/Microsoft.Net.Http.Headers.pdb",
+        "tools/BlazorDebugProxy/Microsoft.Net.Http.Headers.xml",
+        "tools/BlazorDebugProxy/Mono.Cecil.Mdb.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.Pdb.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.Rocks.dll",
+        "tools/BlazorDebugProxy/Mono.Cecil.dll",
+        "tools/BlazorDebugProxy/Newtonsoft.Json.dll",
+        "tools/BlazorDebugProxy/System.Diagnostics.EventLog.dll",
+        "tools/BlazorDebugProxy/System.IO.Pipelines.dll",
+        "tools/BlazorDebugProxy/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/de/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/es/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/it/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.EventLog.dll",
+        "tools/BlazorDebugProxy/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/x64/aspnetcorev2_inprocess.dll",
+        "tools/BlazorDebugProxy/x86/aspnetcorev2_inprocess.dll",
+        "tools/BlazorDebugProxy/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tools/BlazorDebugProxy/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/BlazorDebugProxy/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+      ]
+    },
+    "IdentityServerAdminPanle.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/IdentityServerAdminPanle.Shared.csproj",
+      "msbuildProject": "../Shared/IdentityServerAdminPanle.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "IdentityServerAdminPanle.Shared >= 1.0.0",
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 3.2.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ganjinejad.m\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Server\\IdentityServerAdminPanle.Server.csproj",
+      "projectName": "IdentityServerAdminPanle.Server",
+      "projectPath": "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Server\\IdentityServerAdminPanle.Server.csproj",
+      "packagesPath": "C:\\Users\\ganjinejad.m\\.nuget\\packages\\",
+      "outputPath": "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Server\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ganjinejad.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Public\\Documents\\Syncfusion\\Blazor\\18.2.0.44\\nuget": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/nuget": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Shared\\IdentityServerAdminPanle.Shared.csproj": {
+              "projectPath": "D:\\identityServer5\\quickstart\\IdentityServerAdminPanle\\Shared\\IdentityServerAdminPanle.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+            "target": "Package",
+            "version": "[3.2.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

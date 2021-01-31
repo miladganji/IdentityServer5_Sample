@@ -1,6 +1,8 @@
 ﻿using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Test;
+using IdentityModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +11,70 @@ using System.Threading.Tasks;
 
 namespace blankOfDotNet.IdentitySrv
 {
+	//public class ProfileService : IProfileService
+	//{
+	//	public async Task GetProfileDataAsync(ProfileDataRequestContext context)
+	//	{
+	//		var Claims = new List<Claim>();
+
+	//		foreach (var item in config.GetUsers())
+	//		{
+	//			var Claims2 = new List<Claim> {
+
+	//			 new Claim(ClaimTypes.Role,item.Claims.FirstOrDefault(a=>a.Type=="role").Value),
+	//			 new Claim("NationalCode","3920395905")
+	//			};
+	//			Claims = Claims2;
+	//		}
+
+	//		context.IssuedClaims.AddRange(Claims);
+	//	}
+
+	//	public async Task IsActiveAsync(IsActiveContext context)
+	//	{
+	//		context.IsActive = true;
+	//	}
+	//}
+
+
+
+	public class MyProfileService : IProfileService
+	{
+		public Task GetProfileDataAsync(ProfileDataRequestContext context)
+		{
+			var claims = new List<Claim>();
+			claims.Add(new Claim(JwtClaimTypes.WebSite, "https://leastprivilege.com"));
+			claims.Add(new Claim("FullName", "Joe Tester"));
+			claims.Add(new Claim("CustomClaim2", "SomeValue"));
+			context.IssuedClaims = claims;
+			return Task.FromResult(0);
+		}
+		public Task IsActiveAsync(IsActiveContext context)
+		{
+			context.IsActive = true;
+			return Task.FromResult(0);
+		}
+	}
 	public class config
 	{
+		public class ProfileWithRoleIdentityResource: IdentityResources.Profile
+		{
+			public ProfileWithRoleIdentityResource()
+			{
+				this.UserClaims.Add(JwtClaimTypes.Role);
+			}
+		}
 
 		public static IEnumerable<IdentityResource> GetIdentityResources()
 		{
 
 			return new List<IdentityResource>{
-			
+
 				 new IdentityResources.OpenId(),
-				 new IdentityResources.Profile(),
-				 new IdentityResources.Email()
+				 new ProfileWithRoleIdentityResource(),
+				 new IdentityResources.Email(),
+				 
+				 
 			};
 		}
 
@@ -31,15 +86,22 @@ namespace blankOfDotNet.IdentitySrv
 				new TestUser(){
 
 					SubjectId="1",
+
 					Username="milad",
 					Password="password",
-					Claims=new List<Claim>(){ 
-					 
+					
+					Claims=new List<Claim>(){
+
 						new Claim(ClaimTypes.Name,"mgn"),
 						new Claim(ClaimTypes.Email,"mgn@mgn.com"),
-						new Claim(ClaimTypes.Role,"miladAdmin"),
+						new Claim("given_name","fff"),
+						new Claim("name","milad ganji"),
+						new Claim(JwtClaimTypes.Role,"miladAdmin"),
+						new Claim("email","miladganjinezhad@gmail.com"),
 
-					}
+
+					},
+					
 				},
 				new TestUser(){
 
@@ -54,8 +116,8 @@ namespace blankOfDotNet.IdentitySrv
 
 			return new List<ApiResource>() {
 			 new ApiResource("BlankOfDotNetAPI","Api for Customer") };
-			
-			
+
+
 		}
 
 		public static IEnumerable<Client> GetClientData()
@@ -107,9 +169,9 @@ namespace blankOfDotNet.IdentitySrv
 		{
 			ClientId = "mvc",
 			ClientSecrets = { new Secret("secret".Sha256()) },
-			
+
 			ClientName="mvc client",
-			AllowedGrantTypes = GrantTypes.Code,
+			AllowedGrantTypes = GrantTypes.Hybrid,
             
             // where to redirect to after login
             RedirectUris = { "https://localhost:44309/signin-oidc" },
@@ -121,12 +183,13 @@ namespace blankOfDotNet.IdentitySrv
 			{
 				IdentityServerConstants.StandardScopes.OpenId,
 				IdentityServerConstants.StandardScopes.Profile,
-				IdentityServerConstants.StandardScopes.Email
+				IdentityServerConstants.StandardScopes.Email,
+				
 			},
 			RequireConsent=false,
 			BackChannelLogoutSessionRequired=false,
 			FrontChannelLogoutSessionRequired=false,
-			
+
 		},
 
 
@@ -139,10 +202,10 @@ namespace blankOfDotNet.IdentitySrv
 			AllowedGrantTypes = GrantTypes.Code,
             
             // where to redirect to after login
-            RedirectUris = { "https://localhost:5005/signin-oidc" },
+            RedirectUris = { "https://localhost:5007/authentication/login-callback" },
 
             // where to redirect to after logout
-            PostLogoutRedirectUris = { "http://localhost:5005/signout-callback-oidc" },
+            PostLogoutRedirectUris = { "https://localhost:5007/authentication/logout-callback" },
 			AllowedCorsOrigins={ "http://localhost:5005"},
 			RequirePkce = true,
 			RequireClientSecret = false,
@@ -155,6 +218,7 @@ namespace blankOfDotNet.IdentitySrv
 			RequireConsent=false,
 			BackChannelLogoutSessionRequired=false,
 			FrontChannelLogoutSessionRequired=false,
+			
 
 		},
 
@@ -166,19 +230,21 @@ namespace blankOfDotNet.IdentitySrv
 			AllowedGrantTypes = GrantTypes.Code,
             
             // where to redirect to after login
-            RedirectUris = { "https://localhost:5007/signin-oidc" },
+            RedirectUris = { "https://localhost:5007/authentication/login-callback" },
 
             // where to redirect to after logout
-            PostLogoutRedirectUris = { "http://localhost:5007/signout-callback-oidc" },
+            PostLogoutRedirectUris = { "https://localhost:5007/authentication/logout-callback" },
 			AllowedCorsOrigins={ "http://localhost:5007"},
 			RequirePkce = true,
 			RequireClientSecret = false,
-			
+
 			AllowedScopes = new List<string>
 			{
 				IdentityServerConstants.StandardScopes.OpenId,
 				IdentityServerConstants.StandardScopes.Profile,
-				"blazorWASM2"
+				IdentityServerConstants.StandardScopes.Email,
+
+				"blazorWASM2","mvc"
 			},
 			RequireConsent=false,
 			BackChannelLogoutSessionRequired=false,
@@ -196,7 +262,7 @@ namespace blankOfDotNet.IdentitySrv
 			new ApiScope(){
 
 				Name="IdentityServer5"
-			
+
 			},
 
 			new ApiScope(){
@@ -208,12 +274,28 @@ namespace blankOfDotNet.IdentitySrv
 
 				Name="blazorWASM2"
 
+			},
+			new ApiScope(){
+
+				Name="mvc"
+
+
+
+			},
+
+			new ApiScope(){
+
+				Name="role"
+
+
+
 			}
 
+
+
 			};
+			
 
-
-		}
-
+	}
 	}
 }

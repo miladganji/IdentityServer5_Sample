@@ -17,6 +17,7 @@ using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 using Duende.IdentityServer.Test;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace IdentityServerHost.Quickstart.UI
 {
@@ -182,7 +183,6 @@ namespace IdentityServerHost.Quickstart.UI
         {
             // build a model so the logout page knows what to display
             var vm = await BuildLogoutViewModelAsync(logoutId);
-
             if (vm.ShowLogoutPrompt == false)
             {
                 // if the request for logout was properly authenticated from IdentityServer, then
@@ -205,8 +205,14 @@ namespace IdentityServerHost.Quickstart.UI
 
             if (User?.Identity.IsAuthenticated == true)
             {
-                // delete local authentication cookie
-                await HttpContext.SignOutAsync();
+				// delete local authentication cookie
+				//await HttpContext.SignOutAsync();
+				foreach (var cookie in Request.Cookies.Keys)
+				{
+					Response.Cookies.Delete(cookie);
+				}
+				await HttpContext.SignOutAsync();
+                
 
                 // raise the logout event
                 await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));

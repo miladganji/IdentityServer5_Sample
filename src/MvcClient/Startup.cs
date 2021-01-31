@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -41,9 +42,17 @@ namespace MvcClient
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";
                     options.Scope.Add("profile");
-                   
+                    options.Scope.Add("email");
+
+
                     options.GetClaimsFromUserInfoEndpoint = true;
                     options.SaveTokens = true;
+                    options.ClaimActions.Remove("amr");
+                    options.ClaimActions.Remove("sid");
+                    options.ClaimActions.Remove("idp");
+                    options.ClaimActions.DeleteClaim("email");
+
+
                 });
         }
 

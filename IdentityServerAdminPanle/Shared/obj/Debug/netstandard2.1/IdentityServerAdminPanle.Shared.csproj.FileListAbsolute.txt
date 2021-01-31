@@ -1,0 +1,9 @@
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\bin\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.deps.json
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\bin\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.dll
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\bin\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.pdb
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.csprojAssemblyReference.cache
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.AssemblyInfoInputs.cache
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.AssemblyInfo.cs
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.csproj.CoreCompileInputs.cache
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.dll
+D:\identityServer5\quickstart\IdentityServerAdminPanle\Shared\obj\Debug\netstandard2.1\IdentityServerAdminPanle.Shared.pdb

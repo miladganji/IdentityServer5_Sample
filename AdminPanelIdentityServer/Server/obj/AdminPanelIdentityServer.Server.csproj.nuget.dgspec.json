@@ -1,0 +1,260 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Server\\AdminPanelIdentityServer.Server.csproj": {}
+  },
+  "projects": {
+    "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\AdminPanelIdentityServer.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\AdminPanelIdentityServer.Client.csproj",
+        "projectName": "AdminPanelIdentityServer.Client",
+        "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\AdminPanelIdentityServer.Client.csproj",
+        "packagesPath": "C:\\Users\\ganjinejad.m\\.nuget\\packages\\",
+        "outputPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ganjinejad.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Public\\Documents\\Syncfusion\\Blazor\\18.2.0.44\\nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj": {
+                "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Grpc.Net.Client.Web": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Server\\AdminPanelIdentityServer.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Server\\AdminPanelIdentityServer.Server.csproj",
+        "projectName": "AdminPanelIdentityServer.Server",
+        "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Server\\AdminPanelIdentityServer.Server.csproj",
+        "packagesPath": "C:\\Users\\ganjinejad.m\\.nuget\\packages\\",
+        "outputPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ganjinejad.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Public\\Documents\\Syncfusion\\Blazor\\18.2.0.44\\nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\AdminPanelIdentityServer.Client.csproj": {
+                "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Client\\AdminPanelIdentityServer.Client.csproj"
+              },
+              "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj": {
+                "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Grpc.AspNetCore.Web": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Grpc.Net.Client.Web": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj",
+        "projectName": "AdminPanelIdentityServer.Shared",
+        "projectPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\AdminPanelIdentityServer.Shared.csproj",
+        "packagesPath": "C:\\Users\\ganjinejad.m\\.nuget\\packages\\",
+        "outputPath": "D:\\identityServer5\\quickstart\\AdminPanelIdentityServer\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ganjinejad.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Public\\Documents\\Syncfusion\\Blazor\\18.2.0.44\\nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
